@@ -93,9 +93,7 @@ public class Campo {
 
   void setAberto(boolean aberto) {
     this.aberto = aberto;
-
     if(aberto) notificarObservadores(CampoEvento.ABRIR);
-    
   }
 
   public boolean isAberto() {
@@ -125,6 +123,7 @@ public class Campo {
     aberto = false;
     minado = false;
     marcado = false;
+    notificarObservadores(CampoEvento.REINICIAR);
   }
 
 }
