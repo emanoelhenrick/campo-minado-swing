@@ -125,5 +125,4 @@ public class Campo {
     marcado = false;
     notificarObservadores(CampoEvento.REINICIAR);
   }
-
 }

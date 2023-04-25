@@ -26,7 +26,6 @@ public class BotaoCampo extends JButton implements CampoObservador, MouseListene
     setBackground(BG_PADRAO);
     setOpaque(true);
     setBorder(BorderFactory.createBevelBorder(0));
-
     addMouseListener(this);
     campo.registrarObservador(this);
   }
@@ -106,18 +105,8 @@ public class BotaoCampo extends JButton implements CampoObservador, MouseListene
     }
   }
 
-
-  public void mouseClicked(MouseEvent e) {  
-  }
-  public void mouseEntered(MouseEvent e) {
-    
-  }
-  public void mouseExited(MouseEvent e) {
-
-    
-  }
-  public void mouseReleased(MouseEvent e) {
-    
-  }
-
+  public void mouseClicked(MouseEvent e) {}
+  public void mouseEntered(MouseEvent e) {}
+  public void mouseExited(MouseEvent e) {}
+  public void mouseReleased(MouseEvent e) {}
 }
